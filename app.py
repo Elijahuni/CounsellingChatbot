@@ -174,8 +174,8 @@ def initialize_rag():
         return None
 
 # 위험 상황 감지 함수
-def detect_severe_crisis(text: str) -> bool:
-    severe_crisis_keywords = [
+def detect_crisis(text: str) -> bool:
+    crisis_keywords = [
         # 자해/자살 관련
         '자살', '죽고싶다', '죽을래', '자해', 
         
