@@ -1,0 +1,19 @@
+# 웹 애플리케이션
+streamlit
+streamlit-folium
+
+# 데이터 처리
+numpy
+pandas
+
+# AI/ML
+openai
+sentence-transformers
+faiss-cpu
+
+# 위치 서비스
+folium
+requests
+
+# 유틸리티
+python-dotenv  # 환경변수 관리
