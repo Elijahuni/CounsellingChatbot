@@ -108,7 +108,7 @@ class RAGEngine:
             
             # GPT 응답 생성
             response = self.client.chat.completions.create(
-                model="gpt-4o",
+                model="gpt-4o-mini",
                 messages=messages,
                 temperature=0.3,
                 max_tokens=500,  # 짧은 응답 유도
