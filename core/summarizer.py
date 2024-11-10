@@ -1,4 +1,4 @@
-# summarizer.py
+# core/summarizer.py
 from openai import OpenAI
 import pandas as pd
 from datetime import datetime
@@ -28,7 +28,7 @@ class ChatSummarizer:
             """
 
             response = self.client.chat.completions.create(
-                model="gpt-3.5-turbo",
+                model="gpt-4o-mini",
                 messages=[
                     {"role": "system", "content": "당신은 전문 심리 상담사입니다. 상담 내용을 전문적으로 요약해주세요."},
                     {"role": "user", "content": summary_prompt}
@@ -66,7 +66,7 @@ class ChatSummarizer:
             """
 
             response = self.client.chat.completions.create(
-                model="gpt-3.5-turbo",
+                model="gpt-4o-mini",
                 messages=[
                     {"role": "system", "content": "당신은 전문 심리 상담사입니다. 상담 세션에 대한 전문적인 보고서를 작성해주세요."},
                     {"role": "user", "content": report_prompt}

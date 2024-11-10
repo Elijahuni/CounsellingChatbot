@@ -1,4 +1,4 @@
-# data_processor.py
+# core/data_processor.py
 import os
 import json
 import pandas as pd
